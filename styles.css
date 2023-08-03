@@ -33,12 +33,12 @@
   margin-right: 100px;
 }
 .development-projects,
-.skills {
+.social-projects {
   text-align: center;
   margin-bottom: 50px;
 }
 .development-projects p,
-.skills p {
+.social-projects p {
   text-align: left;
   margin-left: 100px;
   margin-right: 100px;
@@ -55,17 +55,24 @@ body {
   padding: 0;
   margin: 0;
 }
-.instagram-account {
+.social-projects img {
   height: 240px;
   border-radius: 4px;
   top: 700px;
   margin-bottom: 30px;
   margin-top: 30px;
+  align-items: center;
 }
 
-.instagram-post {
-  height: 300px;
-  border-radius: 4px;
-  top: 700px;
-  margin-bottom: 30px;
+.seo-project h1 {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.seo-project ul,
+.seo-project h4,
+.seo-project p {
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
 }
