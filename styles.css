@@ -87,3 +87,12 @@ body {
   margin-left: 50px;
   margin-right: 50px;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
