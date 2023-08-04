@@ -3,17 +3,17 @@
   border-radius: 4px;
   position: absolute;
   top: 100px;
-  left: 70px;
+  left: 40px;
 }
 .container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 250px;
 }
-.tannaz {
+.title {
   position: absolute;
   top: 135px;
-  left: 300px;
+  left: 250px;
 }
 .upper-half {
   height: 202px;
@@ -29,8 +29,8 @@
 .my-journey p,
 .skills p {
   text-align: left;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .development-projects,
 .social-projects {
@@ -40,13 +40,13 @@
 .development-projects p,
 .social-projects p {
   text-align: left;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 50px; */
+  margin-right: 50px;
 }
 .development-projects li {
   color: rgb(72, 86, 147);
   text-align: left;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   margin-right: 100px;
   font-weight: bold;
 }
@@ -66,13 +66,14 @@ body {
 
 .seo-project h1 {
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .seo-project ul,
 .seo-project h4,
-.seo-project p {
+.seo-project p,
+.social-projects p {
   text-align: left;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
