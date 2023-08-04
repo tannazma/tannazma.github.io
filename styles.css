@@ -33,12 +33,14 @@
   margin-right: 50px;
 }
 .development-projects,
-.social-projects {
+.social-projects,
+.my-instagram,
+.my-social-works {
   text-align: center;
   margin-bottom: 50px;
 }
 .development-projects p,
-.social-projects p {
+.my-social-works p {
   text-align: left;
   /* margin-left: 50px; */
   margin-right: 50px;
@@ -50,12 +52,19 @@
   margin-right: 100px;
   font-weight: bold;
 }
+.my-social-works li, .my-social-works h5{
+  text-align: left;
+  margin-right: 50px;
+  margin-left: 50px
+}
 html,
 body {
   padding: 0;
   margin: 0;
 }
-.social-projects img {
+.my-instagram img,
+.my-social-s img,
+.my-social-works img {
   height: 240px;
   border-radius: 4px;
   top: 700px;
@@ -72,7 +81,8 @@ body {
 .seo-project ul,
 .seo-project h4,
 .seo-project p,
-.social-projects p {
+.my-instagram p,
+.my-social-works p {
   text-align: left;
   margin-left: 50px;
   margin-right: 50px;
