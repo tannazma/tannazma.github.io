@@ -99,10 +99,17 @@ body {
 }
 
 .light-mode-icon {
-  height: 15px;
+  height: 20px;
   border: none;
 }
+
 button {
   border: none;
   background-color: transparent;
+}
+
+.light-mode-icon:hover {
+  background-color: rgb(119, 185, 166);
+  padding: 5px;
+  border-radius: 50%;
 }
