@@ -52,10 +52,11 @@
   margin-right: 100px;
   font-weight: bold;
 }
-.my-social-works li, .my-social-works h5{
+.my-social-works li,
+.my-social-works h5 {
   text-align: left;
   margin-right: 50px;
-  margin-left: 50px
+  margin-left: 50px;
 }
 html,
 body {
@@ -95,4 +96,13 @@ body {
 .light-mode {
   background-color: white;
   color: black;
+}
+
+.light-mode-icon {
+  height: 15px;
+  border: none;
+}
+button {
+  border: none;
+  background-color: transparent;
 }
