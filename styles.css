@@ -48,7 +48,6 @@
   margin-right: 50px;
 }
 .development-projects li {
-  color: rgb(72, 86, 147);
   text-align: left;
   margin-right: 100px;
   font-weight: bold;
@@ -92,14 +91,15 @@ body {
   margin-left: 50px;
   margin-right: 50px;
 }
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 
 .light-mode {
   background-color: white;
   color: black;
+}
+
+a {
+  color :rgb(37, 105, 73);
+  text-decoration: none;
 }
 
 .light-mode-icon {
@@ -115,7 +115,7 @@ body {
 }
 
 .light-mode-icon:hover {
-  background-color: rgb(119, 185, 166);
+  background-color: rgb(69, 91, 85);
   border-radius: 50%;
   transform: scale(1);
 }
@@ -149,7 +149,7 @@ body {
     padding: 10px;
     position: absolute;
     top:10px;
-    left: 335px;
+    right: 20px;
   }
   
   #darkModeButton {

@@ -1,0 +1,8 @@
+.dark-mode {
+  background-color: rgb(39, 39, 39);
+  color: rgb(220, 220, 220);
+}
+
+.dark-mode a {
+  color: gold;
+}
