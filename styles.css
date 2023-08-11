@@ -42,15 +42,16 @@
 .development-projects p,
 .my-social-works p {
   text-align: left;
-  /* margin-left: 50px; */
   margin-right: 50px;
 }
 .development-projects li {
   color: rgb(72, 86, 147);
   text-align: left;
-  /* margin-left: 100px; */
   margin-right: 100px;
   font-weight: bold;
+}
+.development-projects h1{
+  text-align:center;
 }
 .my-social-works li,
 .my-social-works h5 {
@@ -68,7 +69,7 @@ body {
 .my-social-works img {
   height: 240px;
   border-radius: 4px;
-  top: 700px;
+  top: 500px;
   margin-bottom: 30px;
   margin-top: 30px;
   align-items: center;
@@ -114,4 +115,16 @@ button {
   background-color: rgb(119, 185, 166);
   border-radius: 50%;
   transform: scale(1);
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
 }
