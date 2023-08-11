@@ -6,13 +6,12 @@
   left: 40px;
 }
 .container {
-  display: flex;
   justify-content: space-between;
   margin-bottom: 250px;
 }
 .title {
   position: absolute;
-  top: 135px;
+  top: 205px;
   left: 250px;
 }
 .upper-half {
@@ -39,6 +38,10 @@
   text-align: center;
   margin-bottom: 50px;
 }
+.my-instagram h2{
+  text-align: left;
+  margin-left:50px ;
+}
 .development-projects p,
 .my-social-works p {
   text-align: left;
@@ -50,11 +53,11 @@
   margin-right: 100px;
   font-weight: bold;
 }
-.development-projects h1{
-  text-align:center;
+.development-projects h1 {
+  text-align: center;
 }
 .my-social-works li,
-.my-social-works h5 {
+.my-social-works h4 {
   text-align: left;
   margin-right: 50px;
   margin-left: 50px;
@@ -105,7 +108,7 @@ body {
   padding: 10px;
 }
 
-button {
+#darkModeButton {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -126,5 +129,32 @@ button {
 @media screen and (max-width: 800px) {
   body {
     width: 100%;
+    margin-right: 50px;
+  }
+  .title {
+    position: absolute;
+    top: 145px;
+    left: 230px;
+  }
+  .my-picture {
+    height: 150px;
+    border-radius: 4px;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+  }
+  .light-mode-icon {
+    height: 17px;
+    border: transparent;
+    padding: 10px;
+    position: absolute;
+    top:10px;
+    left: 335px;
+  }
+  
+  #darkModeButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 }
