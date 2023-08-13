@@ -1,3 +1,9 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
 .my-picture {
   height: 200px;
   border-radius: 4px;
@@ -38,9 +44,9 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.my-instagram h2{
+.my-instagram h2 {
   text-align: left;
-  margin-left:50px ;
+  margin-left: 50px;
 }
 .development-projects p,
 .my-social-works p {
@@ -60,11 +66,6 @@
   text-align: left;
   margin-right: 50px;
   margin-left: 50px;
-}
-html,
-body {
-  padding: 0;
-  margin: 0;
 }
 .my-instagram img,
 .my-social-s img,
@@ -98,7 +99,7 @@ body {
 }
 
 a {
-  color :rgb(37, 105, 73);
+  color: rgb(37, 105, 73);
   text-decoration: none;
 }
 
@@ -148,13 +149,21 @@ a {
     border: transparent;
     padding: 10px;
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 20px;
   }
-  
+
   #darkModeButton {
     border: none;
     background-color: transparent;
     cursor: pointer;
   }
+}
+.time-line {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
