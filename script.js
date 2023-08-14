@@ -42,7 +42,5 @@ window.addEventListener("scroll", () => {
         const targetActiveDiv = document.querySelector('a[href="#development"]').parentElement;
         targetActiveDiv.classList.add('active')
     }
-
-    console.log(window.scrollY, 'j', journeyOffsetTop, 'd', developmentOffsetTop, 's', seoOffsetTop)
 })
 
