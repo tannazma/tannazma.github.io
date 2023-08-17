@@ -31,15 +31,19 @@ window.addEventListener("scroll", () => {
         const targetActiveDiv = document.querySelector('a[href="#journey"]').parentElement;
         targetActiveDiv.classList.add('active')
     }
-
-    // for seo
+    //for development
     if (window.scrollY > developmentOffsetTop && window.scrollY < seoOffsetTop) {
         const targetActiveDiv = document.querySelector('a[href="#development"]').parentElement;
         targetActiveDiv.classList.add('active')
     }
-    // for social
+    // for seo
     if (window.scrollY > seoOffsetTop && window.scrollY < socialOffsetTop) {
-        const targetActiveDiv = document.querySelector('a[href="#development"]').parentElement;
+        const targetActiveDiv = document.querySelector('a[href="#seo"]').parentElement;
+        targetActiveDiv.classList.add('active')
+    }
+    // for social
+    if (window.scrollY > socialOffsetTop) {
+        const targetActiveDiv = document.querySelector('a[href="#social"]').parentElement;
         targetActiveDiv.classList.add('active')
     }
 })

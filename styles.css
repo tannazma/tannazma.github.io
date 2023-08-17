@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .my-picture {
   height: 200px;
@@ -38,11 +39,20 @@ body {
   margin-right: 50px;
 }
 .development-projects,
-.social-projects,
+#social-projects-container,
 .my-instagram,
 .my-social-works {
   text-align: center;
   margin-bottom: 50px;
+}
+/* #social-projects-container {
+} */
+#social-projects {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  width: 2000px;
+
 }
 .my-instagram h2 {
   text-align: left;
@@ -197,6 +207,8 @@ a {
 .time-line:hover {
   background-color: rgba(24, 182, 100, 0.282);
 }
-.time-line .active  {
-  border-color: rgb(25, 0, 255);
+.time-line .active span {
+  border-color: rgb(43, 146, 103);
+  /* margin-top: 30px; */
+  background-color: red;
 }
