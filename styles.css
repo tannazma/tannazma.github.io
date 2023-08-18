@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .my-picture {
   height: 200px;
@@ -39,8 +39,8 @@ body {
   margin-right: 50px;
 }
 .development-projects,
-#social-projects-container,
-/* #social-projects, */
+#social,
+#social-projects,
 .my-instagram,
 .my-social-works {
   text-align: center;

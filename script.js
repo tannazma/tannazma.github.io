@@ -26,6 +26,8 @@ window.addEventListener("scroll", () => {
     const seoOffsetTop = document.getElementById("seo").offsetTop
     const socialOffsetTop = document.getElementById("social").offsetTop
 
+    console.log(document.getElementById("social"))
+
     // for journey
     if (window.scrollY > journeyOffsetTop && window.scrollY < developmentOffsetTop) {
         const targetActiveDiv = document.querySelector('a[href="#journey"]').parentElement;
@@ -48,7 +50,38 @@ window.addEventListener("scroll", () => {
     }
 })
 
-// const parentContainer = document.querySelector("social-projects-container");
-// const child = document.querySelector("#social-projects");
+const parentContainer = document.getElementById("social");
+const child = document.querySelector("#social-projects");
 
 // parentContainer.style.height = `calc(${child.offsetWidth}px - 100vh)`;
+
+// window.addEventListener("scroll", () => {
+//     const scrollMoreThanParentContainer =
+//       window.scrollY - parentContainer.offsetTop;
+
+//     const min = 0;
+//     const max = child.offsetWidth - window.innerWidth;
+
+//     child.style.transform = `translate(-${clamp(
+//       scrollMoreThanParentContainer,
+//       min,
+//       max
+//     )}px)`;
+//   });
+
+//   child.addEventListener("mousewheel", (event) => {
+//     // if deltaY is bigger than deltaX, means user is scrolling vertically, not horizontally
+//     // Math.abs, becaues values can be negative
+//     if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) return;
+
+//     // preventDefault so browser does not go back
+//     event.preventDefault();
+
+//     window.scrollTo(0, window.scrollY + event.deltaX);
+//   });
+
+//   function clamp(n, min, max) {
+//     if (n > min && n < max) return n;
+//     if (n < min) return min;
+//     if (n > max) return max;
+//   }
