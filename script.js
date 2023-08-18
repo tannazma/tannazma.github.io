@@ -51,9 +51,9 @@ window.addEventListener("scroll", () => {
 })
 
 const parentContainer = document.getElementById("social");
-const child = document.querySelector("#social-projects");
+const child = document.getElementById("social-projects");
 
-// parentContainer.style.height = `calc(${child.offsetWidth}px - 100vh)`;
+parentContainer.style.height = `calc(${child.offsetWidth}px - 100vh)`;
 
 // window.addEventListener("scroll", () => {
 //     const scrollMoreThanParentContainer =
