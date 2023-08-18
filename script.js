@@ -48,3 +48,7 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// const parentContainer = document.querySelector("social-projects-container");
+// const child = document.querySelector("#social-projects");
+
+// parentContainer.style.height = `calc(${child.offsetWidth}px - 100vh)`;

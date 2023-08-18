@@ -40,19 +40,18 @@ body {
 }
 .development-projects,
 #social-projects-container,
+/* #social-projects, */
 .my-instagram,
 .my-social-works {
   text-align: center;
   margin-bottom: 50px;
 }
-/* #social-projects-container {
-} */
+
 #social-projects {
   height: 100vh;
   position: sticky;
   top: 0;
   width: 2000px;
-
 }
 .my-instagram h2 {
   text-align: left;
