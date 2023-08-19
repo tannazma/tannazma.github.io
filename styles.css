@@ -42,39 +42,22 @@ body {
   margin-right: 50px;
 }
 .development-projects,
-.my-instagram,
+.my-instagram-container,
 .my-social-works {
   text-align: center;
   margin-bottom: 50px;
 }
 #social {
   position: relative;
-  background-image: linear-gradient(
-    45deg,
-    yellow,
-    green,
-    yellow,
-    green,
-    yellow,
-    green,
-    yellow
-  );
 }
 #social-projects {
   position: sticky;
-  background-image: linear-gradient(45deg, red, black, red, black, red, black);
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
   height: 100vh;
   overflow-x: visible;
-}
-
-#social-projects div {
-  display: flex;
-  padding: 20px;
-  gap: 70px;
 }
 .development-projects p,
 .my-social-works {
@@ -97,7 +80,7 @@ body {
   margin-right: 50px;
   margin-left: 50px;
 }
-.my-instagram img,
+.my-instagram-container img,
 .my-social-s img,
 .my-social-works img {
   height: 385px;
@@ -233,4 +216,67 @@ a {
 #social img {
   width: 220px;
   object-fit: fill;
+}
+
+#social h1 {
+  padding: 30px;
+}
+
+.my-instagram-container p {
+  padding: 0;
+  width: 200px;
+}
+.my-social-works li {
+  width: 200px;
+}
+.seolab-container {
+  display: flex;
+  flex-direction: column;
+}
+.seolab-container h2 {
+  text-align: left;
+}
+.seolab-container h4 {
+  margin: 0;
+}
+.my-instagram {
+  display: flex;
+  flex-direction: column;
+}
+.my-instagram p,
+.my-instagram h2,
+.instagram-images p {
+  text-align: left;
+}
+.instagram-account, .seolab-profile  {
+  width: 150px;
+  height: 231px;
+}
+.instagram-account-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0 !important;
+  gap: 50px;
+}
+.instagram-account-container p {
+  margin: 0;
+  padding: 0;
+}
+.instagram-account-container div {
+  gap: 70px;
+}
+.instagram-account-insight1 {
+  width: 190px !important;
+  height: 292px !important;
+}
+.instagram-images {
+  gap: 30px;
+  margin-top: 20px;
+}
+#social-projects div {
+  display: flex;
+  padding: 20px;
+}
+.seolab-container li {
+  margin-left: 0;
 }
