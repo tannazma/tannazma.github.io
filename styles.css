@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 body {
   overflow-x: hidden;
@@ -49,6 +50,8 @@ body {
   margin-bottom: 50px;
 }
 #social {
+  position: absolute;
+  height: 6000px;
   background-image: linear-gradient(
     45deg,
     yellow,
@@ -59,21 +62,17 @@ body {
     green,
     yellow
   );
-  /* width: 10000px; */
 }
 #social-projects {
-  background-image: linear-gradient(
-    45deg, red, black, red, black, red, black
-    );
-}
-
-#social-projects {
-  height: 100vh;
   position: sticky;
+  background-image: linear-gradient(45deg, red, black, red, black, red, black);
   top: 0;
-  /* width: 10000px; */
+  left: 0;
   display: flex;
-
+  flex-direction: row;
+  /* width: max-content; */
+  height: 100vh;
+  overflow-x: visible;
 }
 
 #social-projects div {
