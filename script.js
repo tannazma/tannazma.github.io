@@ -78,16 +78,17 @@ window.addEventListener("scroll", (e) => {
     )}px)`;
 });
 
-child.addEventListener("mousewheel", (event) => {
-    // if deltaY is bigger than deltaX, means user is scrolling vertically, not horizontally
-    // Math.abs, becaues values can be negative
-    if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) return;
+// child.addEventListener("mousewheel", (event) => {
+//     // if deltaY is bigger than deltaX, means user is scrolling vertically, not horizontally
+//     // Math.abs, becaues values can be negative
+//     if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) return;
 
-    // preventDefault so browser does not go back
-    event.preventDefault();
+//     // preventDefault so browser does not go back
+//     event.preventDefault();
+//     console.log(window.scrollY + event.deltaX)
 
-    window.scrollTo(0, window.scrollY + event.deltaX);
-});
+//     window.scrollTo(0, window.scrollY + event.deltaX);
+// });
 
 function clamp(n, min, max) {
     if (n > min && n < max) return n;
