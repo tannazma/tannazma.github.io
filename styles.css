@@ -209,7 +209,8 @@ a {
   border-color: rgb(43, 146, 103);
   background-color: red;
 }
-.instagram-images {
+.instagram-images,
+.seolab-images {
   display: flex;
 }
 
@@ -231,6 +232,9 @@ a {
 }
 .seolab-container {
   display: flex;
+}
+.seolab {
+  display: flex;
   flex-direction: column;
 }
 .seolab-container h2 {
@@ -248,7 +252,8 @@ a {
 .instagram-images p {
   text-align: left;
 }
-.instagram-account, .seolab-profile  {
+.instagram-account,
+.seolab-profile {
   width: 150px;
   height: 231px;
 }
@@ -256,20 +261,21 @@ a {
   display: flex;
   flex-direction: column;
   padding-top: 0 !important;
-  gap: 50px;
+  gap: 55px;
 }
 .instagram-account-container p {
   margin: 0;
   padding: 0;
 }
-.instagram-account-container div {
+/* .instagram-account-container div {
   gap: 70px;
-}
+} */
 .instagram-account-insight1 {
   width: 190px !important;
   height: 292px !important;
 }
-.instagram-images {
+.instagram-images,
+.seolab-images {
   gap: 30px;
   margin-top: 20px;
 }
@@ -279,4 +285,21 @@ a {
 }
 .seolab-container li {
   margin-left: 0;
+}
+.seolab-images img {
+  width: 197px !important;
+  height: 395px !important;
+}
+.seolab-images {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+.seolab h2 {
+  margin-top: 0;
+}
+.instagram-account {
+  width: 230px;
+  height: 410px;
 }
