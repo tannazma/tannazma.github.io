@@ -26,7 +26,6 @@ window.addEventListener("scroll", () => {
     const seoOffsetTop = document.getElementById("seo").offsetTop
     const socialOffsetTop = document.getElementById("social").offsetTop
 
-    console.log(document.getElementById("social"))
 
     // for journey
     if (window.scrollY > journeyOffsetTop && window.scrollY < developmentOffsetTop) {
@@ -52,6 +51,14 @@ window.addEventListener("scroll", () => {
 
 const parentContainer = document.getElementById("social");
 const child = document.getElementById("social-projects");
+let length = 0;
+for (grandChild of child.children) {
+    length += grandChild.offsetWidth
+}
+
+child.style.width = length + 'px'
+parentContainer.style.height = length + 'px'
+
 
 // parentContainer.style.height = `calc(${child.offsetWidth}px - 100vh)`;
 
@@ -62,6 +69,7 @@ window.addEventListener("scroll", (e) => {
 
     const min = 0;
     const max = child.offsetWidth - window.innerWidth;
+
 
     child.style.transform = `translate(-${clamp(
         scrollMoreThanParentContainer,
