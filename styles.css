@@ -210,12 +210,13 @@ a {
   background-color: red;
 }
 .instagram-images,
-.seolab-images {
+.seolab-images,
+.ifc-en-images,
+.ifc-en-images {
   display: flex;
 }
 
 #social img {
-  width: 220px;
   object-fit: fill;
 }
 
@@ -230,17 +231,29 @@ a {
 .my-social-works li {
   width: 200px;
 }
-.seolab-container {
+.seolab-container,
+.grandima-container,
+.ifc-farsi-container,
+.ifc-en-container {
   display: flex;
 }
-.seolab {
+.seolab,
+.grandima,
+.ifc-farsi,
+.ifc-en {
   display: flex;
   flex-direction: column;
 }
-.seolab-container h2 {
+.seolab-container h2,
+.grandima-container h2,
+.ifc-farsi-container h2,
+.ifc-en-container h2 {
   text-align: left;
 }
-.seolab-container h4 {
+.seolab-container h4,
+.grandima-container h4,
+.ifc-farsi-container h4,
+.ifc-en-container h4 {
   margin: 0;
 }
 .my-instagram {
@@ -275,7 +288,10 @@ a {
   height: 292px !important;
 }
 .instagram-images,
-.seolab-images {
+.seolab-images,
+.grandima-images,
+.ifc-farsi-images,
+.ifc-en-images {
   gap: 30px;
   margin-top: 20px;
 }
@@ -283,23 +299,39 @@ a {
   display: flex;
   padding: 20px;
 }
-.seolab-container li {
+.seolab li,
+.grandima li,
+.ifc-en li,
+.ifc-farsi li {
   margin-left: 0;
 }
-.seolab-images img {
+.seolab-images img,
+.grandima-images img,
+.ifc-en-images img,
+/* .ifc-farsi-images li, */
+.ifc-farsi-images img {
   width: 197px !important;
   height: 395px !important;
 }
-.seolab-images {
-  padding: 0;
-  display: flex;
+.seolab-image,
+.grandima-images,
+.ifc-farsi-images,
+.ifc-en-images {
+  /* padding: 0;
+  display: flex; */
   flex-direction: row;
   margin-top: 0;
 }
-.seolab h2 {
+.seolab h2,
+.grandima h2,
+.ifc-en h2,
+.ifc-farsi h2 {
   margin-top: 0;
 }
 .instagram-account {
   width: 230px;
   height: 410px;
+}
+.ifc-farsi p, .ifc-en p{
+  width: 200px;
 }
