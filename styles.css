@@ -332,6 +332,54 @@ a {
   width: 230px;
   height: 410px;
 }
-.ifc-farsi p, .ifc-en p{
+.ifc-farsi p,
+.ifc-en p {
   width: 200px;
+}
+.contact-container {
+  padding: 30px;
+}
+.girl {
+  height: 300px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.social-icons img {
+  height: 30px;
+  width: 30px;
+  margin-top: 70px;
+}
+/* .social-icons img:hover {
+  background-color: red;
+} */
+.github {
+  background-image: url("/public/github.png");
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  margin-top: 70px;
+}
+.github:hover {
+  background-image: url("/public/github green.png");
+  scale: 1.2;
+}
+.instagram {
+  background-image: url("/public/instagram.png");
+  background-size: contain;
+  height: 32px;
+  width: 32px;
+  margin-top: 70px;
+}
+.instagram:hover {
+  background-image: url("/public/instagram green.png");
+  scale: 1.2;
 }
