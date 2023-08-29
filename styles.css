@@ -384,3 +384,36 @@ a {
   background-image: url("/public/instagram green.png");
   scale: 1.2;
 }
+.linkedin {
+  background-image: url("/public/linkedin.png");
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  margin-top: 70px;
+}
+.linkedin:hover {
+  background-image: url("/public/linkedin green.png");
+  scale: 1.2;
+}
+.gmail {
+  background-image: url("/public/gmail.png");
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  margin-top: 70px;
+}
+.gmail:hover {
+  background-image: url("/public/email green.png");
+  scale: 1.2;
+}
+.youtube {
+  background-image: url("/public/youtube.png");
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  margin-top: 70px;
+}
+.youtube:hover {
+  background-image: url("/public/youtube green.png");
+  scale: 1.2;
+}
