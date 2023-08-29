@@ -25,6 +25,8 @@ window.addEventListener("scroll", () => {
     const developmentOffsetTop = document.getElementById("development").offsetTop
     const seoOffsetTop = document.getElementById("seo").offsetTop
     const socialOffsetTop = document.getElementById("social").offsetTop
+    const contactOffsetTop = document.getElementById("contact").offsetTop
+
 
 
     // for journey
@@ -43,8 +45,13 @@ window.addEventListener("scroll", () => {
         targetActiveDiv.classList.add('active')
     }
     // for social
-    if (window.scrollY > socialOffsetTop) {
+    if (window.scrollY > socialOffsetTop && window.scrollY < contactOffsetTop - window.innerHeight) {
         const targetActiveDiv = document.querySelector('a[href="#social"]').parentElement;
+        targetActiveDiv.classList.add('active')
+    }
+    //for contact
+    if (window.scrollY > contactOffsetTop - window.innerHeight) {
+        const targetActiveDiv = document.querySelector('a[href="#contact"]').parentElement;
         targetActiveDiv.classList.add('active')
     }
 })
