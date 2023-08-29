@@ -4,5 +4,8 @@
 }
 
 .dark-mode a {
-  color: gold;
+  color: rgb(100, 155, 147);
+}
+.social-icons div {
+  filter: invert(1) hue-rotate(180deg);
 }
