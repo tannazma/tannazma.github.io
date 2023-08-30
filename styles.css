@@ -95,13 +95,15 @@ body {
 }
 .seo-project ul,
 .seo-project h4,
-.seo-project p,
-.my-social-works p {
+.seo-project p {
   text-align: left;
   margin-left: 50px;
   margin-right: 50px;
 }
-
+.my-social-works p {
+  text-align: left;
+  margin-right: 50px;
+}
 .light-mode {
   background-color: white;
   color: black;
