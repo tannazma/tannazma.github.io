@@ -171,7 +171,7 @@ a {
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }  
+  }
 }
 .time-line {
   position: fixed;
@@ -359,19 +359,14 @@ a {
   display: flex;
   flex-direction: row;
   margin-left: 50px;
-  gap:50px
-
-}
-.social-icons img {
-  height: 30px;
-  width: 30px;
+  gap: 60px;
 }
 .github {
   background-image: url("/public/github.png");
   background-size: contain;
-  height: 30px;
-  width: 30px;
-  margin-top: 70px;
+  height: 40px;
+  width: 40px;
+  margin-top: -70px;
 }
 .github:hover {
   background-image: url("/public/github green.png");
@@ -380,9 +375,9 @@ a {
 .instagram {
   background-image: url("/public/instagram.png");
   background-size: contain;
-  height: 32px;
-  width: 32px;
-  margin-top: 70px;
+  height: 45px;
+  width: 45px;
+  margin-top: -70px;
 }
 .instagram:hover {
   background-image: url("/public/instagram green.png");
@@ -391,9 +386,9 @@ a {
 .linkedin {
   background-image: url("/public/linkedin.png");
   background-size: contain;
-  height: 30px;
-  width: 30px;
-  margin-top: 70px;
+  height: 40px;
+  width: 40px;
+  margin-top: -70px;
 }
 .linkedin:hover {
   background-image: url("/public/linkedin green.png");
@@ -402,9 +397,9 @@ a {
 .gmail {
   background-image: url("/public/gmail.png");
   background-size: contain;
-  height: 30px;
-  width: 30px;
-  margin-top: 70px;
+  height: 43px;
+  width: 43px;
+  margin-top: -70px;
 }
 .gmail:hover {
   background-image: url("/public/email green.png");
@@ -413,11 +408,25 @@ a {
 .youtube {
   background-image: url("/public/youtube.png");
   background-size: contain;
-  height: 30px;
-  width: 30px;
-  margin-top: 70px;
+  height: 45px;
+  width: 45px;
+  margin-top: -70px;
 }
 .youtube:hover {
   background-image: url("/public/youtube green.png");
   scale: 1.2;
+}
+@media screen and (max-width: 800px) {
+  .social-icons {
+    margin-left: 0;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .contact {
+    padding-bottom: 78px;
+  }
+  .girl {
+    height: 170px;
+    margin-top: 40px;
+  }
 }
