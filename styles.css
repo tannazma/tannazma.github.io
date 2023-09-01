@@ -346,6 +346,9 @@ a {
 .contact-container {
   padding: 30px;
 }
+.contact-me {
+  width: ۲۲px;
+}
 .girl {
   height: 300px;
   padding-top: 0;
@@ -354,6 +357,7 @@ a {
 .contact {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .social-icons {
   display: flex;
@@ -429,11 +433,10 @@ a {
     height: 170px;
     margin-top: 40px;
   }
-  .light-mode-icon{
-    position:fixed;
+  .light-mode-icon {
+    position: fixed;
     right: 10px;
     background-color: rgb(29, 102, 84);
     border-radius: 20px;
-
   }
 }
