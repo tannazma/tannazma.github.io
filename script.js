@@ -44,10 +44,21 @@ window.addEventListener("scroll", () => {
         const targetActiveDiv = document.querySelector('a[href="#seo"]').parentElement;
         targetActiveDiv.classList.add('active')
     }
+
+    if (window.scrollY > socialOffsetTop && window.scrollY < contactOffsetTop) {
+        document.querySelector('#social-projects').style.position = 'fixed';
+
+    } else {
+        document.querySelector('#social-projects').style.bottom = '0';
+
+    }
+
     // for social
     if (window.scrollY > socialOffsetTop && window.scrollY < contactOffsetTop - window.innerHeight) {
         const targetActiveDiv = document.querySelector('a[href="#social"]').parentElement;
         targetActiveDiv.classList.add('active')
+    } else {
+        // document.querySelector('#social-projects').style.position = 'absolute';
     }
     //for contact
     if (window.scrollY > contactOffsetTop - window.innerHeight) {
@@ -64,18 +75,30 @@ for (grandChild of child.children) {
 }
 
 child.style.width = length + 'px'
-parentContainer.style.height = length + 'px'
+parentContainer.style.height = length + window.innerHeight - window.innerWidth + 'px'
 
 
-// parentContainer.style.height = `calc(${child.offsetWidth}px - 100vh)`;
 
 window.addEventListener("scroll", (e) => {
     e.preventDefault()
     const scrollMoreThanParentContainer =
         window.scrollY - parentContainer.offsetTop;
 
+        console.log(scrollMoreThanParentContainer)
+
     const min = 0;
     const max = child.offsetWidth - window.innerWidth;
+
+    console.log(scrollMoreThanParentContainer)
+    if (scrollMoreThanParentContainer > max) {
+        document.querySelector('#social-projects').style.top = max - scrollMoreThanParentContainer + 'px'
+    } else if (scrollMoreThanParentContainer < 0) {
+        document.querySelector('#social-projects').style.top = -1 * scrollMoreThanParentContainer + 'px'
+    } else { 
+        document.querySelector('#social-projects').style.top = 0 + 'px'
+
+    }
+
 
 
     child.style.transform = `translate(-${clamp(
