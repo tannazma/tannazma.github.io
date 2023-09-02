@@ -18,6 +18,8 @@ function toggleTheme() {
 if (localStorage.getItem("theme") == "dark") {
     toggleTheme()
 }
+
+// handling timeline scroll
 window.addEventListener("scroll", () => {
     document.querySelector('.active')?.classList.remove('active')
 
@@ -45,14 +47,6 @@ window.addEventListener("scroll", () => {
         targetActiveDiv.classList.add('active')
     }
 
-    if (window.scrollY > socialOffsetTop && window.scrollY < contactOffsetTop) {
-        document.querySelector('#social-projects').style.position = 'fixed';
-
-    } else {
-        document.querySelector('#social-projects').style.bottom = '0';
-
-    }
-
     // for social
     if (window.scrollY > socialOffsetTop && window.scrollY < contactOffsetTop - window.innerHeight) {
         const targetActiveDiv = document.querySelector('a[href="#social"]').parentElement;
@@ -67,48 +61,57 @@ window.addEventListener("scroll", () => {
     }
 })
 
-const parentContainer = document.getElementById("social");
-const child = document.getElementById("social-projects");
+const tallSocialProjectsDom = document.getElementById("social");
+const wideSocialProjectsDom = document.getElementById("social-projects");
 let length = 0;
-for (grandChild of child.children) {
+for (grandChild of wideSocialProjectsDom.children) {
     length += grandChild.offsetWidth
 }
 
-child.style.width = length + 'px'
-parentContainer.style.height = length + window.innerHeight - window.innerWidth + 'px'
+wideSocialProjectsDom.style.width = length + 'px'
+tallSocialProjectsDom.style.height = length + window.innerHeight - window.innerWidth + 'px'
 
 
-
+// handling horizontal scroll for social projects part
 window.addEventListener("scroll", (e) => {
     e.preventDefault()
     const scrollMoreThanParentContainer =
-        window.scrollY - parentContainer.offsetTop;
+        window.scrollY - tallSocialProjectsDom.offsetTop;
 
-        console.log(scrollMoreThanParentContainer)
+    console.log(scrollMoreThanParentContainer)
 
     const min = 0;
-    const max = child.offsetWidth - window.innerWidth;
+    const max = wideSocialProjectsDom.offsetWidth - window.innerWidth;
 
     console.log(scrollMoreThanParentContainer)
     if (scrollMoreThanParentContainer > max) {
         document.querySelector('#social-projects').style.top = max - scrollMoreThanParentContainer + 'px'
     } else if (scrollMoreThanParentContainer < 0) {
         document.querySelector('#social-projects').style.top = -1 * scrollMoreThanParentContainer + 'px'
-    } else { 
+    } else {
         document.querySelector('#social-projects').style.top = 0 + 'px'
 
     }
 
 
+    if (window.scrollY > socialOffsetTop && window.scrollY < contactOffsetTop) {
+        document.querySelector('#social-projects').style.position = 'fixed';
 
-    child.style.transform = `translate(-${clamp(
+    } else {
+        document.querySelector('#social-projects').style.bottom = '0';
+
+    }
+
+
+
+    wideSocialProjectsDom.style.transform = `translate(-${clamp(
         scrollMoreThanParentContainer,
         min,
         max
     )}px)`;
 });
 
-// child.addEventListener("mousewheel", (event) => {
+// wideSocialProjectDom.addEventListener("mousewheel", (event) => {
 //     // if deltaY is bigger than deltaX, means user is scrolling vertically, not horizontally
 //     // Math.abs, becaues values can be negative
 //     if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) return;
