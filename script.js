@@ -74,6 +74,9 @@ tallSocialProjectsDom.style.height = length + window.innerHeight - window.innerW
 
 // handling horizontal scroll for social projects part
 window.addEventListener("scroll", (e) => {
+    const socialOffsetTop = document.getElementById("social").offsetTop
+    const contactOffsetTop = document.getElementById("contact").offsetTop
+
     e.preventDefault()
     const scrollMoreThanParentContainer =
         window.scrollY - tallSocialProjectsDom.offsetTop;

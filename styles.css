@@ -127,6 +127,7 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: auto;
 }
 
 .light-mode-icon:hover {
@@ -171,6 +172,7 @@ a {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    z-index: auto;
   }
 }
 .time-line {
@@ -425,6 +427,8 @@ a {
     margin-left: 0;
     gap: 30px;
     margin-top: 20px;
+    cursor: pointer;
+    z-index: auto;
   }
   .contact {
     padding-bottom: 78px;
