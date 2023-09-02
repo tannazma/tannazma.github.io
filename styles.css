@@ -119,21 +119,23 @@ a {
 
 .light-mode-icon {
   height: 20px;
-  border: none;
-  padding: 10px;
+  transition: all 0.2s;
 }
 
 #darkModeButton {
   border: none;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: auto;
-}
-
-.light-mode-icon:hover {
   background-color: rgb(69, 91, 85);
   border-radius: 50%;
-  transform: scale(1);
+  cursor: pointer;
+  z-index: 1;
+  position: fixed;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+}
+
+#darkModeButton:hover .light-mode-icon {
+  scale: 1.15;
 }
 
 @media screen and (min-width: 400px) {
@@ -159,20 +161,12 @@ a {
     top: 120px;
     left: 60px;
   }
-  .light-mode-icon {
-    height: 17px;
-    border: transparent;
-    padding: 10px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
+ 
 
   #darkModeButton {
     border: none;
-    background-color: transparent;
     cursor: pointer;
-    z-index: auto;
+    z-index: 1;
   }
 }
 .time-line {
@@ -436,11 +430,5 @@ a {
   .girl {
     height: 170px;
     margin-top: 40px;
-  }
-  .light-mode-icon {
-    position: fixed;
-    right: 10px;
-    background-color: rgb(29, 102, 84);
-    border-radius: 20px;
   }
 }
