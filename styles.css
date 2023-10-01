@@ -65,12 +65,10 @@ body {
   position: relative;
 }
 #social-projects {
-  /* position: fixed;
-  top: 0;
-  left: 0; */
   display: flex;
   flex-direction: row;
   overflow-x: visible;
+  padding-top: 150px;
 }
 .development-projects p,
 .my-social-works {

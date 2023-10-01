@@ -85,14 +85,14 @@ window.addEventListener("scroll", (e) => {
 
     const min = 0;
     const max = wideSocialProjectsDom.offsetWidth - window.innerWidth;
-
+    
     console.log(scrollMoreThanParentContainer)
     if (scrollMoreThanParentContainer > max) {
-        document.querySelector('#social-projects').style.top = 150 + max - scrollMoreThanParentContainer + 'px'
+        document.querySelector('#social-projects').style.top = max - scrollMoreThanParentContainer + 'px'
     } else if (scrollMoreThanParentContainer < 0) {
-        document.querySelector('#social-projects').style.top = 150 + -1 * scrollMoreThanParentContainer + 'px'
+        document.querySelector('#social-projects').style.top = -1 * scrollMoreThanParentContainer + 'px'
     } else {
-        document.querySelector('#social-projects').style.top = 150 + 'px'
+        document.querySelector('#social-projects').style.top = 0 + 'px'
 
     }
 
