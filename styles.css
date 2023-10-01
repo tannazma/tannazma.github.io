@@ -22,6 +22,7 @@ body {
   position: absolute;
   top: 100px;
   left: 40px;
+  transition: all 0.5s;
 }
 .container {
   justify-content: space-between;
@@ -31,6 +32,7 @@ body {
   position: absolute;
   top: 205px;
   left: 250px;
+  transition: all 0.5s;
 }
 .upper-half {
   height: 202px;
@@ -160,8 +162,9 @@ a {
   }
   .title {
     position: absolute;
-    top: 145px;
-    left: 230px;
+    top: 190px;
+    left: 220px;
+    line-height: 20px;
   }
   .my-picture {
     height: 150px;
