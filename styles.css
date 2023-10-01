@@ -41,7 +41,7 @@ body {
 .my-journey,
 .skills {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .my-journey p,
 .skills p {
@@ -54,8 +54,9 @@ body {
 .my-social-works {
   text-align: center;
   margin-bottom: 50px;
+  margin-bottom: 100px;
 }
-.development-projects {
+.development-project s {
   margin-right: 50px;
 }
 #social {
@@ -96,7 +97,9 @@ body {
   height: 385px;
   border-radius: 4px;
 }
-
+.seo-project {
+  margin-bottom: 100px;
+}
 .seo-project h1 {
   text-align: center;
   margin-left: 50px;
