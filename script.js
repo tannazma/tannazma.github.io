@@ -88,11 +88,11 @@ window.addEventListener("scroll", (e) => {
 
     console.log(scrollMoreThanParentContainer)
     if (scrollMoreThanParentContainer > max) {
-        document.querySelector('#social-projects').style.top = max - scrollMoreThanParentContainer + 'px'
+        document.querySelector('#social-projects').style.top = 150 + max - scrollMoreThanParentContainer + 'px'
     } else if (scrollMoreThanParentContainer < 0) {
-        document.querySelector('#social-projects').style.top = -1 * scrollMoreThanParentContainer + 'px'
+        document.querySelector('#social-projects').style.top = 150 + -1 * scrollMoreThanParentContainer + 'px'
     } else {
-        document.querySelector('#social-projects').style.top = 0 + 'px'
+        document.querySelector('#social-projects').style.top = 150 + 'px'
 
     }
 
@@ -113,18 +113,6 @@ window.addEventListener("scroll", (e) => {
         max
     )}px)`;
 });
-
-// wideSocialProjectDom.addEventListener("mousewheel", (event) => {
-//     // if deltaY is bigger than deltaX, means user is scrolling vertically, not horizontally
-//     // Math.abs, becaues values can be negative
-//     if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) return;
-
-//     // preventDefault so browser does not go back
-//     event.preventDefault();
-//     console.log(window.scrollY + event.deltaX)
-
-//     window.scrollTo(0, window.scrollY + event.deltaX);
-// });
 
 function clamp(n, min, max) {
     if (n > min && n < max) return n;
