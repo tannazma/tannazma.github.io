@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lora");
+:root {
+  --body-padding: 800px;
+}
 
 html,
 body {
@@ -81,6 +84,7 @@ body {
 }
 .development-projects p {
   text-align: left;
+  max-width: 200px;
 }
 .development-projects h1 {
   text-align: center;
@@ -104,6 +108,10 @@ body {
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+}
+.journey-projects {
+  display: flex;
+  flex-direction: column;
 }
 .seo-project ul,
 .seo-project h4,
@@ -150,6 +158,23 @@ a {
 @media screen and (min-width: 400px) {
   body {
     width: 100%;
+  }
+  .seo-project {
+    flex: 1;
+  }
+  .my-journey {
+    flex: 1;
+  }
+  .development-projects {
+    flex: 1;
+  }
+  .journey-projects {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .journey-projects {
+    padding-left: calc(50vw - calc(var(--body-padding) / 2));
   }
 }
 
