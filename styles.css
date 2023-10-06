@@ -79,12 +79,10 @@ body {
 }
 .development-projects li {
   text-align: left;
-  margin-right: 100px;
   font-weight: bold;
 }
 .development-projects p {
   text-align: left;
-  max-width: 200px;
 }
 .development-projects h1 {
   text-align: center;
@@ -171,6 +169,10 @@ a {
   .journey-projects {
     max-width: 800px;
   }
+}
+.dev-projects-ul {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 1000px) {
   .journey-projects {
