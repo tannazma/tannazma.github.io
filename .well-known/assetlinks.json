@@ -4,7 +4,7 @@
     "target": {
       "namespace": "android_app",
       "package_name": "io.github.tannazma.sketchvr",
-      "sha256_cert_fingerprints": ["REPLACE_WITH_YOUR_SHA256_FINGERPRINT"]
+      "sha256_cert_fingerprints": ["88:59:B9:E6:A1:42:7E:60:A5:6B:AA:6E:A3:EB:F1:7B:CB:FB:14:8C:13:A8:B5:ED:FE:D4:23:B0:00:0B:CE:38"]
     }
   }
 ]
